@@ -1,7 +1,6 @@
 import os 
 import folium
 from folium import plugins
-import matplotlib.pyplot as plt
 import numpy as np
 import requests
 import json
@@ -92,9 +91,14 @@ def create_app():
 
     @app.route('/<lat>,<lng>')
     def request_electric_lat_lng(lat,lng):
-        find_electric_motos(lat,lng) 
-        path = 'map'+str(lat)+','+str(lng)+'.html'
-        return render_template(path)
+        status = find_electric_motos(lat,lng) 
+        if status == 0:
+            flash('No result')
+            return render_template('map.html')
+        else:
+        
+            path = 'map'+str(lat)+','+str(lng)+'.html'
+            return render_template(path)
 
     
     # return
