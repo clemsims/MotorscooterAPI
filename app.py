@@ -77,7 +77,6 @@ from pathlib import Path
 def create_app():
     app = Flask(__name__)  # Creation of the app
     app.secret_key = "motorscooter"  # Key
-    run_with_ngrok(app)
     # Home page
     @app.route('/') # when you go to the home page 
     def request_electric():
