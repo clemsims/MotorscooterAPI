@@ -9,7 +9,6 @@ import numpy as np
 import requests
 import json
 import pandas as pd
-import cv2 as cv
 import os
 
 # import variable token from config.py
