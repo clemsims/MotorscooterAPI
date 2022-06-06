@@ -3,5 +3,4 @@ gunicorn
 folium
 numpy
 requests
-json
 pandas
