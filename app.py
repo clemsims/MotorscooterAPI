@@ -5,6 +5,7 @@ import numpy as np
 import requests
 import json
 import pandas as pd
+
 import config   
 
 
@@ -68,9 +69,6 @@ def find_electric_motos(lat,lng):
 
 
 from flask import Flask, render_template, flash, Response, redirect, request, url_for, send_from_directory
-from werkzeug.utils import secure_filename
-from flask_ngrok import run_with_ngrok
-from pathlib import Path
 
 
 
