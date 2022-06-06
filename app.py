@@ -1,14 +1,11 @@
-from pathlib import Path
 import os 
 import folium
 from folium import plugins
-
 import matplotlib.pyplot as plt
 import numpy as np
 import requests
 import json
 import pandas as pd
-
 import config   
 
 
@@ -102,6 +99,7 @@ def create_app():
     
     # return
     return app
+
 
 
     

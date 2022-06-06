@@ -1,6 +1,5 @@
 flask
 gunicorn
-os
 folium
 matplotlib.pyplot 
 numpy
